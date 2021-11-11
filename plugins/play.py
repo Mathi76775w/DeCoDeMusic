@@ -178,7 +178,7 @@ async def play(_, message: Message):
     if message.chat.id in DISABLED_GROUPS:
         await message.reply("**maintainence mode is on, ask admin to disable it!**")
         return
-    lel = await message.reply("🔄 **Processing...**")
+    lel = await message.reply("🔄 **𝐏𝐲𝐓𝐠[𝐌𝐮𝐬𝐢𝐜]⚡Processing...**")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -253,8 +253,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🚨 Support", url="t.me/decodesupport"),
-                    InlineKeyboardButton("📡 Updates", url="t.me/DeeCodebots"),
+                    InlineKeyboardButton("✨ Support", url="t.me/@tgcalls_MusicXchat"),
+                    InlineKeyboardButton("⚡ Updates", url="t.me/@tgcalls_Music_update"),
                 ],
                 [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
@@ -354,8 +354,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🚨 Support", url="t.me/decodesupport"),
-                    InlineKeyboardButton("📡 Updates", url="t.me/DeeCodebots"),
+                    InlineKeyboardButton("🚨 Support", url="t.me/tgcalls_MusicXchat"),
+                    InlineKeyboardButton("📡 Updates", url="t.me/tgcalls_Music_update"),
                 ],
                 [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
@@ -376,7 +376,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
             photo="final.png",
-            caption="**🎵 Song:** {}\n**🕒 Duration:** {} min\n**👤 Added By:** {}\n\n**#⃣ Queued Position:** {}".format(
+            caption="**🏷️ 𝐓𝐢𝐭𝐥𝐞:** {}\n**⏳ ᴅᴜʀᴀᴛɪᴏɴ:** {} min\n**🎸 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐁𝐲:** {}\n\n**#⃣ Queued Position:** {}".format(
                 title,
                 duration,
                 message.from_user.mention(),
@@ -389,7 +389,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="**🎵 Song:** {}\n**🕒 Duration:** {} min\n**👤 Added By:** {}\n\n**▶️ Now Playing at `{}`...**".format(
+            caption="**🏷️ 𝐓𝐢𝐭𝐥𝐞:** {}\n**:** {} min\n**👤 Added By:** {}\n\n**▶️ Now Playing at `{}`...**".format(
                 title, duration, message.from_user.mention(), message.chat.title
             ),
         )
