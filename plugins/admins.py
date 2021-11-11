@@ -18,7 +18,7 @@ from pytgcalls.types.input_stream import InputAudioStream
 async def pause(_, message: Message):
     await callsmusic.pytgcalls.pause_stream(message.chat.id)
     await message.reply_photo(
-                             photo="https://telegra.ph/file/dd6814e241bfc4c0255cd.jpg", 
+                             photo="https://telegra.ph/file/698bac65a20cc879ef176.jpg", 
                              caption="**⏸ Music Paused.\n use /resume**"
     )
 
@@ -29,7 +29,7 @@ async def pause(_, message: Message):
 async def resume(_, message: Message):
     await callsmusic.pytgcalls.resume_stream(message.chat.id)
     await message.reply_photo(
-                             photo="https://telegra.ph/file/d0f2dd5b7519bb5444139.jpg", 
+                             photo="https://telegra.ph/file/5e5756d6e9b5c4c7d6747.jpg", 
                              caption="**▶️ Music Resumed.\n use /pause**"
     )
 
@@ -45,7 +45,7 @@ async def stop(_, message: Message):
 
     await callsmusic.pytgcalls.leave_group_call(message.chat.id)
     await message.reply_photo(
-                             photo="https://telegra.ph/file/8d22aa7d53b6acb9a125e.jpg", 
+                             photo="https://telegra.ph/file/2cca39a678dc9feb12ffd.jpg", 
                              caption="❌ **Stopped Streaming\n use /play for new song**"
     )
 
@@ -82,7 +82,7 @@ async def skip(_, message: Message):
    ) 
 
 
-@Client.on_message(filters.command(["reload", "refresh"]))
+@Client.on_message(filters.command(["redeploy", "refresh"]))
 @errors
 @authorized_users_only
 async def admincache(client, message: Message):
@@ -95,6 +95,6 @@ async def admincache(client, message: Message):
     )
 
     await message.reply_photo(
-                              photo="https://telegra.ph/file/d881ea9de7620ecc36d08.jpg",
+                              photo="https://telegra.ph/file/c9283bd30cdba677f2141.jpg",
                               caption="**Reloaded\n Admin List updated**"
     )
