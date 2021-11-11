@@ -253,8 +253,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("✨ Support", url="t.me/@tgcalls_MusicXchat"),
-                    InlineKeyboardButton("⚡ Updates", url="t.me/@tgcalls_Music_update"),
+                    InlineKeyboardButton("✨ Support", url="t.me/tgcalls_MusicXchat"),
+                    InlineKeyboardButton("⚡ Updates", url="t.me/tgcalls_Music_update"),
                 ],
                 [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
@@ -354,8 +354,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🚨 Support", url="t.me/tgcalls_MusicXchat"),
-                    InlineKeyboardButton("📡 Updates", url="t.me/tgcalls_Music_update"),
+                    InlineKeyboardButton("✨ Support", url="t.me/tgcalls_MusicXchat"),
+                    InlineKeyboardButton("⚡ Updates", url="t.me/tgcalls_Music_update"),
                 ],
                 [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
